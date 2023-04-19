@@ -5,6 +5,7 @@
 ### Partition Algorithms
 
 - Hoare Partition
+- Lomuto Partition
 
 ### Problems
 
@@ -34,6 +35,41 @@ Iterator Indexes: i = 8, j = 7
 i >= j and so we return j
 
 Return Index: 7
+```
+### Lomuto Partition
+```
+$ ./lomuto_partition
+Array Length: 5
+ Enter Array: 6 3 2 8 5
+   Enter Low: 0
+  Enter High: 4
+
+Pivot: 5
+
+Loop Number: 1
+Array: 6 3 2 8 5 
+Iterator Indexes: i = -1, j = 0
+
+Loop Number: 2
+Array: 6 3 2 8 5 
+Iterator Indexes: i = -1, j = 1
+Swapping values: 6 and 3
+     At indexes: 0 and 1
+
+Loop Number: 3
+Array: 3 6 2 8 5 
+Iterator Indexes: i = 0, j = 2
+Swapping values: 6 and 2
+     At indexes: 1 and 2
+
+Loop Number: 4
+Array: 3 2 6 8 5 
+Iterator Indexes: i = 1, j = 3
+
+Swapping values: 6 and 5
+     At indexes: 2 and 4
+
+Return Index: 2
 ```
 
 ### 0/1 Knapsack with DP
