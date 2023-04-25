@@ -10,6 +10,7 @@
 ### Problems
 
 - 01 Knapsack with DP
+- Tower of Hanoi with recursion
 
 ## Usage
 
@@ -86,4 +87,49 @@ DP Table:
 0    0    56   56   60   66   
 
 Max Profit: 66
+```
+
+### Tower of Hanoi with recursion
+```
+$ ./tower_of_hanoi
+Enter number of disks: 3
+Move Number: 0
+A | 3 2 1 
+B | 
+C | 
+
+Move Number: 1
+A | 3 2 
+B | 
+C | 1 
+
+Move Number: 2
+A | 3 
+B | 2 
+C | 1 
+
+Move Number: 3
+A | 3 
+B | 2 1 
+C | 
+
+Move Number: 4
+A | 
+B | 2 1 
+C | 3 
+
+Move Number: 5
+A | 1 
+B | 2 
+C | 3 
+
+Move Number: 6
+A | 1 
+B | 
+C | 3 2 
+
+Move Number: 7
+A | 
+B | 
+C | 3 2 1
 ```
