@@ -140,6 +140,7 @@ C | 3 2 1
 
 ### DFA
 ```
+$ ./dfa
 Number of states: 3
 Enter transitions:
 Note that the starting state is 0
@@ -174,6 +175,7 @@ Word: 111 is accepting.
 ```
 
 ```
+$ ./dfa
 Number of states: 4
 Enter transitions:
 Note that the starting state is 0
