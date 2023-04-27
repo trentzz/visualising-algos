@@ -12,6 +12,10 @@
 - 01 Knapsack with DP
 - Tower of Hanoi with recursion
 
+### Automata
+
+- DFA (limited to alphabets {0,1})
+
 ## Usage
 
 ### Hoare Partition
@@ -132,4 +136,52 @@ Move Number: 7
 A | 
 B | 
 C | 3 2 1
+```
+
+### DFA
+```
+Number of states: 3
+Enter transitions:
+Note that the starting state is 0
+Syntax: <condition> <start> <end>
+e.g. A transition from state 1 to 3 after seeing a '0' would be written as:> 0 1 3
+Enter 'end' or 'q' to complete transitions.
+> 0 0 1
+> 1 0 1
+> 0 1 2
+> 1 1 2
+> 0 2 2
+> 1 2 2
+> end
+
+Enter number of end states: 1
+2
+
+Enter words:
+Use 'epsilon' to denote the empty string.
+Enter 'end' or 'q' to end program.
+
+> epsilon
+Word: epsilon is not accepting.
+
+> 0
+Word: 0 is not accepting.
+
+> 111
+Word: 111 is accepting.
+
+> end
+```
+
+```
+Number of states: 4
+Enter transitions:
+Note that the starting state is 0
+Syntax: <condition> <start> <end>
+e.g. A transition from state 1 to 3 after seeing a '0' would be written as:> 0 1 3
+Enter 'end' or 'q' to complete transitions.
+> 0 0 1
+> 1 0 1
+> end
+You are missing a one transition from state: 1
 ```
